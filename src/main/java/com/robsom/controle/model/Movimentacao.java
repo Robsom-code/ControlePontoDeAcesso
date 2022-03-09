@@ -17,11 +17,11 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 public class Movimentacao {
-    @AllArgsConstructor
-    @NoArgsConstructor
     @EqualsAndHashCode
     @Embeddable
-    public  class  MovimentacaoId implements Serializable {
+    @Getter
+    @Setter
+    public static class MovimentacaoId implements Serializable {
         private long idMovimento;
         private long idUsuario;
     }
